@@ -1,0 +1,30 @@
+ALGORITHM find
+VAR
+sentence : STRING;
+words : INTEGER:= 0;
+voyels : INTEGER := 0;
+sum : INTEGER := 0;
+i : INTEGER;
+j : INTEGER;
+y : INTEGER;
+BEGIN
+FOR i FROM 0 TO sentence.length-1 DO 
+  sum := sum + i
+END_FOR
+ write("The number of characters =")
+ Write(sum)
+FOR j FROM 0 TO sentence.length-1 DO 
+IF (sentence[j] == " ") THEN
+    words = words + 1
+END_IF
+END_FOR
+  write("The number of words =")
+  write(words + 1)
+FOR y FROM 0 TO sentence.length-1 DO 
+IF (sentence[y] == "a" OR "e" OR "i" OR "o" OR "u") THEN
+    voyels = voyels + 1
+END_IF
+END_FOR
+  write("The number of voyels =")
+  write(voyels)
+END
